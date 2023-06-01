@@ -1,0 +1,22 @@
+<div class="container">
+   <div class="form-contact text-center mt-5">
+
+    <form #addUser="ngForm" (ngSubmit)="submit(addUser.value)" class="common-form">
+      <div class="mb-3">
+          <label for="name">Name: </label>
+          <input type="name" ngModel name="name"   placeholder="Name">
+        </div>
+        <div class="mb-3">
+          <label for="surname">Surname: </label>
+          <input type="surname" ngModel name="surname"   placeholder="Surname">
+        </div>
+        <div class="mb-3">
+          <label for="age">Age: </label>
+          <input type="number" ngModel name="age"   placeholder="Age" >
+        </div>
+        <button  class="btn btn-primary">Add</button>
+      </form>
+
+
+   </div>
+</div>
